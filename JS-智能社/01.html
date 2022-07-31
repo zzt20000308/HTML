@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {
+            width: 200px;
+            height: 100px;
+            background: #ccc;
+            border: 1px solid #999;
+            display: none;
+        }
+    </style>
+</head>
+
+    <!-- 事件：用户操作 如：onmouseover、onmouseout -->
+    <!-- .意思为：的    div1.style.display==>div1的style的display -->
+    <!-- getElementById==>get：获取；Element：元素；By：通过；Id：ID==>通过ID获取元素 -->
+
+<body>
+    <!-- <input type="checkbox" onmouseover="div1.style.display='block';" onmouseout="div1.style.display='none';"> -->
+    <input type="checkbox" onmouseover="document.getElementById('div1').style.display='block';" onmouseout="document.getElementById('div1').style.display='none';">
+    <div id="div1">
+        为了您的信息安全。。。
+    </div>
+</body>
+</html>

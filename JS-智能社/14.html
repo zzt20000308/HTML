@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function setText1() {
+            var oTxt=document.getElementById('txt1');
+
+            //第一种操作属性的方法
+            // oTxt.value='abc';
+
+            //第二种操作属性的方法
+            // oTxt['value']='123';
+            var a='value'
+            oTxt[a]='123';
+        }
+
+        function setText2(name) {
+            var oTxt=document.getElementById('txt2');
+            oTxt[name]='zzt';
+        }
+    </script>
+</head>
+<body>
+    <input id="txt1" type="text">
+    <input type="button" value="改变文字" onclick="setText1()">
+    <input id="txt2" type="text">
+    <input type="button" value="改变文字" onclick="setText2('value')">
+</body>
+</html>
